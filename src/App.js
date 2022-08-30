@@ -1,4 +1,6 @@
 import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { LogosPage } from './components/logos-page';
 
 // Questions:
 // 1. Load data from local file (path: “https://ac.aws.citizennet.com/assets/qspreviews/qs_interview_data.json”)
@@ -8,12 +10,11 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <div>
-          Let's start here
-        </div>
-        
-      </header>
+      <BrowserRouter>
+        <Routes>
+          <Route exact path="/" element={<LogosPage />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

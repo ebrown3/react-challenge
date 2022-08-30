@@ -1,0 +1,47 @@
+.brands-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+.brands-page-title {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 2vw;
+}
+
+.brands-page {
+    margin: 1vw;
+}
+
+.brand-image {
+    min-height: 7vh;
+    min-width: 7vw;
+    max-height: 10vh;
+    max-width: 10vw;
+}
+
+.brand {
+    min-width: 15vw;
+    margin: 2vw;
+    min-height: 15vh;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand:hover {
+    background-color: rgba(0, 0, 0, 0.907);
+    opacity: 0.2;
+}
+
+.brand::after {
+    content: attr("Hi ther");
+}
